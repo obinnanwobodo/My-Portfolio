@@ -1,0 +1,295 @@
+.contactgen{
+    display: flex;  
+    flex-direction: column;
+    background-color: #101219;
+    color: white;
+padding-top: 70px;
+height: 73vw;
+overflow-x: hidden;
+overflow-y: hidden;
+}
+
+.firsthandp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.firsthandp h1{
+    font-size: 48px;
+    font-family: system-ui;
+    font-weight: 700;
+}
+
+.firsthandp h1::after{
+content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 5px;
+    position: relative;
+    border-radius: 5px;
+     background: linear-gradient(to bottom right, rgba(0, 220, 255, 0.8), rgba(124, 0, 128, 0.9));
+   left: 90px;
+top: 7px;
+}
+
+.firsthandp p{
+    font-size: 18px;
+    font-family: system-ui;
+color: #a2aebe;
+padding-top: 40px;
+}
+
+.span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.secondhandp{
+    padding-left: 130px;
+    padding-top: 70px;
+}
+
+.secondhandp h1{
+    font-size: 24px;
+    font-family: system-ui;
+font-weight: 500;
+}
+
+.secondhandp p{
+    font-size: 18px;
+    font-family: system-ui;
+color: #a2aebe;
+padding-top: 27px;
+
+}
+
+.boxgen{
+    /* display: flex;
+    gap: 50px; */
+}
+
+.followndready{
+display: flex;
+justify-content: space-evenly;
+}
+
+
+
+.boxes1{
+display: flex;
+flex-direction: column;
+padding-left: 130px;
+gap: 20px;
+padding-top: 30px;
+}
+
+.boxes1 svg{
+width: 24px;
+height: 24px;
+color: #1ac2ff;
+
+}
+
+.boxes1 h1{
+font-size: 16px;
+font-weight: 500;
+    font-family: system-ui;
+
+
+}
+
+.boxes1 p{
+    font-size: 16px;
+    color: #a2aebe;
+    font-family: system-ui;
+
+}
+
+.boxes1 a{
+font-size: 16px;
+    color: #a2aebe;
+    font-family: system-ui;
+
+}
+
+.boxes1 a:hover{
+    color: #1ac2ff;
+}
+
+.no1, .no2, .no3{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    border: 1px solid #ffffff1a;
+    border-radius: 12px;
+    width: max-content;
+    width: 520px;
+    padding: 12px;
+    background-color: #0c0d13;
+}
+
+
+.box2{
+background-color: #0c0d13;
+padding: 34px;
+border-radius: 15px;
+border: 1px solid #ffffff1a;
+position: relative;
+bottom: 300px;
+left: 110px;
+padding-bottom: 12px;
+}
+
+
+.box2 h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+font-size: 24px;
+font-family: system-ui;
+font-weight: 500;
+}
+
+.box2 p{
+    font-size: 16px;
+font-family: system-ui;
+color: #a2aebe;
+padding-top: 20px;
+}
+
+
+.btn1 {
+    display: flex;
+    align-items: center;
+background-color: #333bd1;
+gap: 15px;
+    margin-top: 20px;
+padding: 10px;
+border-radius: 10px;
+width: 100%;
+
+}
+
+.btn1 button{
+    display: flex;
+   
+}
+
+.btn2{
+    display: flex;
+    align-items: center;
+    background-color: #0c0d13;
+gap: 15px;
+padding: 10px;
+border-radius: 10px;
+width: 100%;
+border: 1px solid #1ac2ff;
+    margin-top: 20px;
+
+}
+
+.btn1 h2{
+     font-size: 14px;
+font-family: system-ui;
+font-weight: 500;
+}
+
+.btn2 h2{
+     font-size: 14px;
+font-family: system-ui;
+    color: #1ac2ff;
+font-weight: 500;
+
+}
+
+.btn2 svg{
+    color: #1ac2ff;
+}
+
+.btn1:hover{
+    background-color: rgb(26, 26, 153);
+}
+
+.btn2:hover{
+    background-color: #1ac2ff;
+    color: black;
+}
+
+.box2 h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #a2aebe;
+    padding-top: 30px;
+}
+
+.follow{
+display: flex;
+flex-direction: column;
+position: relative;
+right: 107px;
+top: 70px;
+}
+
+
+.follow h1{
+    font-size: 18px;
+    font-family: system-ui;
+    font-weight: 500;
+    
+}
+
+.socialimg{
+    display: flex;
+    color: white;
+    gap: 10px;
+     position: relative;
+     top: 15px;
+
+
+}
+
+.social1{
+    display: flex;
+     justify-content: center;
+  align-items: center;
+    font-size: 25px;
+width: 40px;
+height: 40px;
+border: 1px solid #ffffff1a;
+background-color: #0c0d13;
+border-radius: 8px;
+}
+
+.social2{
+    display: flex;
+     justify-content: center;
+  align-items: center;
+    font-size: 25px;
+    width: 40px;
+height: 40px;
+border: 1px solid #ffffff1a;
+background-color: #0c0d13;
+border-radius: 8px;
+}
+
+.social1:hover svg, .social2:hover svg{
+color: #1ac2ff;
+}
+
+.contactgen::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: #a2aebe;
+    position: absolute;
+    margin-top: 920px;
+}

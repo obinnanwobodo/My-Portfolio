@@ -1,0 +1,278 @@
+.skillsgen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ background-color: #101219;
+color: white;
+font-family: system-ui;
+height: 1100px;
+position: relative;
+padding-top: 250px;
+}
+
+.st{
+display: flex;
+font-size: 48px;
+font-weight: 700;
+margin-bottom: 320px;
+justify-content: center;
+align-items: center;
+position: relative;
+left: 50px;
+}
+
+.st::after{
+    content: "";
+    display: flex;
+    width: 100px;
+    height: 5px;
+    position: relative;
+    /* transform: tra   nslateX(-50%); */
+    border-radius: 5px;
+     background: linear-gradient(to bottom right, rgba(0, 220, 255, 0.8), rgba(124, 0, 128, 0.9));
+     top: 40px;  
+     right: 290px;
+}
+
+.stp{
+font-size: 18px;
+color: #a2aebe  ;
+margin-top: 35px;
+position: relative;
+left: 10px;
+bottom: 320px;
+}
+
+.boxes{
+    display: flex;
+    margin-top: 70px;
+    gap: 50px;
+position: relative;
+bottom: 310px;
+}
+
+.box1{
+ background-color: #0c0d13;
+    padding: 30px;
+    height: 100%;
+ border-radius: 20px; 
+ border:  1px solid rgba(255, 255, 255, 0.08);
+
+}
+
+.box1 svg{
+width: 32px;
+height: 32px;
+color: #1ac2ff;
+}
+
+.box1:hover svg{
+       transform: translateX(-6px) scale(1.1);
+
+}
+
+.box1 h1{
+font-size: 20px;
+font-weight: 500;
+margin-top: 10px;
+}
+
+.box1 li{
+color: #a2aebe;
+font-size: 14px;
+padding: 1px;
+}
+
+.box1 li::marker{
+    color: #1ac2ff;
+}
+
+.box2{
+  background-color: #0c0d13;
+    padding: 33px;
+ border-radius: 20px; 
+border:  1px solid rgba(255, 255, 255, 0.08);
+
+
+}
+
+.box2 svg{
+width: 32px;
+height: 32px;
+color: #333bd1;
+
+}
+
+.box2:hover svg{
+       transform: translateX(-6px) scale(1.1);
+
+}
+
+.box2 h1{
+font-size: 20px;
+font-weight: 500;
+margin-top: 10px;
+}
+
+.box2 li{
+   color: #a2aebe;
+font-size: 14px;
+padding: 1px; 
+}
+
+.box2 li::marker{
+    color: #1ac2ff;
+}
+
+.box3{
+ background-color: #0c0d13;
+    padding: 13px;
+ border-radius: 20px; 
+border:  1px solid rgba(255, 255, 255, 0.08);
+
+}
+
+.box3 svg{
+width: 32px;
+height: 32px;
+color: #1ac2ff;
+margin-top: 20px;
+
+}
+
+.box3:hover svg{
+       transform: translateX(-6px) scale(1.1);
+
+}
+
+
+.box3 h1{
+font-size: 20px;
+font-weight: 500;
+margin-top: 10px;
+}
+
+.box3 li{
+    color: #a2aebe;
+font-size: 14px;
+padding: 1px;
+}
+
+.box3 li::marker{
+    color: #1ac2ff;
+}
+
+
+.box4{
+  background-color: #0c0d13;
+    padding: 15px;
+ border-radius: 20px; 
+border:  1px solid rgba(255, 255, 255, 0.08);
+
+}
+
+.box4 svg{
+width: 32px;
+height: 32px;
+color: #333bd1;
+margin-top: 20px;   
+}
+
+.box4:hover svg{
+       transform: translateX(-6px) scale(1.1);
+
+}
+
+.box4 h1{
+font-size: 20px;
+font-weight: 500;
+margin-top: 10px;
+}
+
+.box4 li{
+    color: #a2aebe;
+font-size: 14px;
+padding: 1px;
+}
+
+.box4 li::marker{
+    color: #1ac2ff;
+}
+
+
+
+
+
+
+/* PROFICIENCY */
+
+
+
+
+.Proficiencygen{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 280px;
+border:  1px solid rgba(255, 255, 255, 0.08);
+border-radius: 10px;
+ background-color:#0c0d13 ;
+min-height: 400px;
+min-width: 1120px;
+  
+}
+
+
+
+
+.Proficiencygroups{
+    display: grid;
+    grid-template-columns: repeat(2, 4fr);
+gap: 22px;
+    position: relative;
+bottom: 50px;
+}
+
+.each{
+    display: flex;
+    justify-content: space-between;
+    gap: 340px;
+    position: relative;
+    top: 100px;
+}
+.profh1{
+font-size: 24px;
+font-weight: 500;
+position: relative;
+top: 20px;
+}
+
+.name{
+font-size: 16px;
+font-weight: 500;
+}
+
+.level{
+font-size: 14px;
+}
+
+.progressbar {
+  width: 500px;
+  height: 6px;
+  background-color: #2a2d39;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 8px;
+  position: relative;
+  top: 100px;
+}
+
+.progress {
+  height: 100%;
+  border-radius: 6px;
+  background: linear-gradient(to right, #1ac2ff, #7c0080);
+  transition: width 0.5s ease-in-out;
+}

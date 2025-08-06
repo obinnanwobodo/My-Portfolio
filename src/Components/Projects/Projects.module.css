@@ -1,0 +1,254 @@
+.projectgen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c0d13;
+    position: relative;
+    height: 1900px;
+    padding-bottom: 40px;
+}
+
+.fph1{
+    font-size: 48px;
+    font-family: system-ui;
+    font-weight: 600;
+    color: #ffffff;
+    padding-top: 60px;
+
+    
+}
+
+.fph1::after{
+
+  content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 5px;
+    position: relative;
+    border-radius: 5px;
+     background: linear-gradient(to bottom right, rgba(0, 220, 255, 0.8), rgba(124, 0, 128, 0.9));
+left: 133px;
+    top: 5px;
+}
+
+
+.desp{
+    font-size: 18px;
+    font-family: system-ui;
+    color: #a2aebe;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+
+.mappinggen{
+    display: flex;
+    flex-direction: column;
+padding-top: 70px;
+}
+
+
+.stylingofmapping{
+    display: flex;
+  padding: 90px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+    width: 1100px;
+    height: 500px;
+border:  1px solid #ffffff1a;
+   transition: transform 0.1s ease-in-out;
+transform: scale(1);
+}
+
+.stylingofmapping:hover img{
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.images{
+background: linear-gradient(#E6E6E6,#0c2d48);
+/* linear-gradient(#0c2d48, #E6E6E6,#0c2d48,#E6E6E6) */
+  padding: 0;
+    overflow: hidden; 
+    border-radius: 15px;
+width: 80%;
+position: relative;
+right: 91px;
+bottom:93px;
+cursor: pointer;    
+
+} 
+
+.images img{
+     justify-content: center;
+  align-items: center;
+  border-radius: 17px;
+position: relative;
+ overflow: hidden;
+ width: 90%;
+ left: 23px;
+ top: 35px;
+
+   transition: transform 0.1s ease-in-out;
+  transform: scale(1);
+}
+
+.images:hover img {
+  transform: scale(1.05);
+}
+
+
+.secondimagebg {
+    background-color: #0c2d48;
+    
+}
+
+.secondimagebg img{
+    padding: 90px;
+    position: absolute;
+    top: -80px;
+    justify-content: center;
+    align-items: center;
+    left: 21px;
+}
+
+
+.texts{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    bottom: 67px;
+}
+
+.title{
+    font-size: 26px;
+    font-family: system-ui;
+    font-weight:700;
+
+}
+
+.description{
+    font-size: 18px;
+    font-family: system-ui;
+    color: #a2aebe;
+    position: relative;
+    top: 10px;
+    
+    
+}
+
+.kf{
+font-size: 18px;
+    font-family: system-ui;
+    color: #ffffff;
+    font-weight: 500;
+    position: relative;
+    top: 37px;
+}
+
+.featuresList{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+font-size: 14px;
+    font-family: system-ui;
+    color: #a2aebe;
+    list-style-type: disc;
+    gap: 10px;
+    padding: 10px;
+    padding-top: 45px;
+}
+
+.featuresList ::marker{
+color: #333bd1;
+}
+
+.technologies{
+font-size: 18px;
+    font-family: system-ui;
+    color: #ffffff;
+    font-weight: 500;
+
+}
+
+.techList{
+    display: flex;
+font-size: 14px;
+    font-family: system-ui;
+    color: #a2aebe;
+    font-weight: 500;
+    gap: 20px;
+    padding-top: 11px;
+    
+}
+
+.eachtechitem{
+    background-color: #333bd11a; 
+color: #333bd1;
+border-radius: 18px;
+padding: 8px;
+}
+
+
+.iconbut{
+display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333bd1;
+    color: #ffffff;
+    width: 40%;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 10px;
+    font-size: 14px;
+    font-family: system-ui;
+    font-weight: 500;
+    position: relative;
+    top: 12px;
+}
+
+.iconbut:hover{
+    background-color: rgb(41, 41, 153);
+    cursor: pointer;
+}
+
+
+.firsimagebg{
+background-color: red;
+width: 1200px;
+}
+
+.firstTextGroup{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    padding-bottom: 40px;
+    position: relative;
+    bottom: 72px;
+}
+
+
+
+.firsmapgrp:hover{
+
+ transition: transform 0.4s ease-in-out;
+  transform: scale(1);
+}
+
+
+.secondmapgrp:hover{
+
+ transition: transform 0.4s ease-in-out;
+  transform: scale(1);
+}
+
+.thirdmapgrp:hover{
+ transition: transform 0.4s ease-in-out;
+  transform: scale(1);
+
+}

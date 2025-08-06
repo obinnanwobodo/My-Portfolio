@@ -1,0 +1,22 @@
+.footergen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c0d13;
+    color: white;
+    padding-top: 18px;
+    height: 120px;
+    position: relative;
+
+}
+
+.footergen h1{
+font-size: 16px;
+color: #a2aebe;
+}
+
+.footergen h2{
+    font-size: 14px;
+color: #a2aebe;
+}

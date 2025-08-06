@@ -1,0 +1,56 @@
+.gennav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 270px;
+    background-color: #0c0d13;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+  left: 0;
+  right: 0;
+z-index: 1000;
+}
+
+.gennav h1{
+font-size: 24px;
+font-family: system-ui;
+font-weight:600 ;
+  background: linear-gradient(to right, #00ffff, #8e2de2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;         
+  color: transparent;
+  padding-right: 10 0px;
+}
+
+
+
+.haspc {
+    display: flex;
+    color: #d1d5db;
+    gap: 40px;
+    font-size: 16px;
+    font-family: system-ui;
+    cursor: pointer;
+}
+
+.haspc a:hover {
+  background: linear-gradient(to right, cyan, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+.haspc a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background: linear-gradient(to right, cyan, purple);
+  transition: width 0.3s ease;
+  margin: auto;
+}
+
+.haspc a:hover::after {
+  width: 100%;
+}
