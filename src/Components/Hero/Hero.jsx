@@ -22,8 +22,9 @@ const Hero = () => {
       </p>
 
       <div className={styles.buttons}>
-        <button className={styles.btn1}>View My Work</button>
-        <button className={styles.btn2}>Get In Touch</button>
+        <a href="#projects">  <button  className={styles.btn1} >View My Work</button > </a>
+        <a href="#contact"> <button className={styles.btn2}>Get In Touch</button> </a>
+        
       </div>
       
       <div className={styles.scrolldown}>
