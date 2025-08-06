@@ -2,7 +2,7 @@ import Image from "next/image";
 import Navbar from "@/Components/Navbar/Navbar";
 import Hero from "@/Components/Hero/Hero";
 import styles from './globals.css';
-import About from "@/Components/About/About";
+import About from '../Components/about/About';
 import Skills from "@/Components/Skills/Skills";
 import Projects from "@/Components/Projects/Projects";
 import Contact from "@/Components/Contact/Contact";
