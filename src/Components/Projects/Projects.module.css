@@ -7,6 +7,9 @@
     position: relative;
     height: 1900px;
     padding-bottom: 40px;
+    max-width: 100%;
+width: 100%;
+overflow-y: hidden;
 }
 
 .fph1{
@@ -78,6 +81,7 @@ background: linear-gradient(#E6E6E6,#0c2d48);
     border-radius: 15px;
 width: 80%;
 position: relative;
+
 right: 91px;
 bottom:93px;
 cursor: pointer;    
@@ -98,6 +102,15 @@ position: relative;
   transform: scale(1);
 }
 
+.firsimagebg img, .secondimagebg img, .thirdimagebg img{
+           display: flex;
+        justify-content: center;
+
+        align-items: center;
+        
+    }
+
+
 .images:hover img {
   transform: scale(1.05);
 }
@@ -109,12 +122,10 @@ position: relative;
 }
 
 .secondimagebg img{
-    padding: 90px;
-    position: absolute;
-    top: -80px;
-    justify-content: center;
-    align-items: center;
-    left: 21px;
+
+
+     position: static; 
+  padding-left: 45px;
 }
 
 
@@ -250,5 +261,240 @@ width: 1200px;
 .thirdmapgrp:hover{
  transition: transform 0.4s ease-in-out;
   transform: scale(1);
+
+}
+
+/* RESPONSIVNESS*/
+
+
+@media (max-width: 767px) {
+    .projectgen {
+        height: auto;
+        padding-bottom: 20px;
+        overflow-y: visible;
+    }
+
+    .fph1 {
+        font-size: 32px;
+        padding-top: 30px;
+    }
+
+    .fph1::after {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 5px;
+    }
+
+    .desp {
+        font-size: 16px;
+        padding: 0 20px;
+        top: 10px;
+        left: 0;
+        text-align: center;
+    }
+
+    .mappinggen {
+        padding-top: 30px;
+        width: 100%;
+        gap: 30px;
+
+    }
+
+    .stylingofmapping {
+        flex-direction: column;
+        padding: 20px;
+        margin-bottom: 20px;
+        width: 90%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .images {
+        width: 100%;
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    .images img {
+        width: 100%;
+        position: static;
+        top: auto;
+        left: auto;
+        border-radius: 10px;
+        padding: 0;
+    }
+
+    .texts {
+        position: static;
+        bottom: auto;
+        width: 100%;
+    }
+
+    .title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .description {
+        font-size: 16px;
+        top: 0;
+    }
+
+    .kf {
+        font-size: 16px;
+        top: 10px;
+    }
+
+    .featuresList {
+        grid-template-columns: 1fr;
+        gap: 5px;
+        padding: 10px 0 10px 20px;
+    }
+
+    .technologies {
+        font-size: 16px;
+    }
+
+    .techList {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-top: 5px;
+    }
+
+    .iconbut {
+        width: 100%;
+        top: 20px;
+    }
+
+    .secondmapgrp{
+        padding-bottom: 50px;
+    }
+
+    .thirdmapgrp{
+        padding-bottom: 50px;
+
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .projectgen {
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .fph1 {
+        font-size: 40px;
+        padding-top: 40px;
+    }
+
+    .fph1::after {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 5px;
+    }
+
+    .desp {
+        font-size: 18px;
+        padding: 0 40px;
+        top: 15px;
+        left: 0;
+    }
+
+    .mappinggen {
+        padding-top: 50px;
+        justify-content: center;
+        padding-left: 70px;
+    }
+
+    .stylingofmapping {
+        
+        width: 90%;
+        height: auto;
+        padding: 50px;
+       padding-top: 30px;
+        padding-bottom: 30px;
+        
+    }
+
+
+    .firsimagebg, .secondimagebg, .thirdimagebg{
+           display: flex;
+        justify-content: center;
+        height: 200px;
+        align-items: center;
+        
+    }
+
+
+    .secondimagebg img{
+
+position: static;
+padding-top: 80%;
+justify-content: center;
+align-items: center;
+padding-right: 43px;
+    }
+
+    .images {
+        width: 40%;
+        position: static;
+        right: auto;
+        bottom: auto;
+
+    }
+
+    .images img {
+        width: 95%;
+        position: static;
+top: auto;       
+  left: auto; 
+    
+    }
+
+    
+
+    .texts {
+        bottom: 0;
+        width: 55%;
+        padding-left: 20px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .kf {
+        font-size: 16px;
+        top: 20px;
+    }
+
+    .featuresList {
+        grid-template-columns: 1fr;
+        gap: 5px;
+        padding-top: 25px;
+        padding-left: 10px;
+    }
+
+    .technologies {
+        font-size: 16px;
+    }
+
+    .techList {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .iconbut {
+        width: 60%;
+        top: 15px;
+    }
 
 }

@@ -5,8 +5,11 @@ import Image from 'next/image';
 import fotis from '../../../public/images/fotis-fotopoulos-SyvsTmuuZyM-unsplash.jpg'
 
 const Hero = () => {
-  return (    
-  <div>
+  return ( 
+    
+    <div className={styles.genhero}>
+
+  <div className={styles.imgdiv}>
     <Image src={fotis } alt='background image' className={styles.herobgimg}/>
   
   <div className={styles.overlay}></div>
@@ -31,6 +34,7 @@ const Hero = () => {
         <a href="#about"><GrDown /></a>
       </div>
     </div>
+</div>
 </div>
   )
 }

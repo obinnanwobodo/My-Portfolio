@@ -5,10 +5,12 @@
     align-items: center;
     position: relative;
     background-color: #0c0d13;
-margin-top: 192px;
-height: 45vw;
+height: 100%;
 box-sizing: border-box;
 padding-bottom: 150px;
+width: 100%;
+max-width: 100%;
+overflow-x: hidden;
 }
 
 .abtme{
@@ -126,4 +128,141 @@ border-radius: 10px;
 .box2 p{
     display: flex;
     flex-direction: column;
+}
+
+
+/* RESPONSIVNESS */
+
+@media (max-width: 480px) {
+  .abtme {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .abtme::after {
+    width: 80px;
+    margin-top: 60px;
+  }
+
+  .pndbox {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+
+  .pndbox p {
+    font-size: 15px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .boxes {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    right: 0;
+    padding: 0 10px;
+  }
+
+  .boxes p {
+    right: 0;
+    text-align: center;
+  }
+}
+
+
+
+@media (min-width: 481px) and (max-width: 778px) {
+  .abtme {
+    font-size: 38px;
+  }
+
+  .abtme::after {
+    width: 90px;
+    margin-top: 65px;
+  }
+
+  .pndbox {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+    padding: 0 20px;
+  }
+
+  .pndbox p {
+    font-size: 16px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .boxes {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    right: 0;
+    gap: 25px;
+    padding: 0 10px;
+  }
+
+  .boxes p {
+    right: 0;
+    text-align: center;
+  }
+}
+
+
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .abtme {
+    font-size: 42px;
+  }
+
+  .pndbox {
+    gap: 100px;
+    margin-top: 60px;
+    padding: 0 50px;
+  }
+
+  .pndbox p {
+    font-size: 17px;
+    margin-left: 0;
+  }
+
+  .boxes {
+    width: 90%;
+    gap: 30px;
+    right: 0;
+    padding: 0;
+  }
+
+  .boxes p {
+    right: 0;
+  }
+
+  
+}
+
+
+
+
+
+/* Large screens (1025px and up) */
+@media (min-width: 1025px) {
+  .pndbox {
+    gap: 180px;
+    margin-top: 55px;
+  }
+
+  .pndbox p {
+    margin-left: 70px;
+  }
+
+  .boxes {
+    width: 500px;
+    gap: 40px;
+    right: 100px;
+  }
 }

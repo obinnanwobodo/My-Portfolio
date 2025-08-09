@@ -63,7 +63,9 @@ const Projects = () => {
             <div className={`${styles.mappinggen}`} >
                 {arrays.map((each, index) => (
 
-                    <div key={each.id} className={`${styles.stylingofmapping} ${index === 0 ? styles.firsmapgrp
+                    <div key={each.id} className={`${styles.stylingofmapping} 
+                    ${index === 0 ?
+                         styles.firsmapgrp
                                 : index === 1
                                     ? styles.secondmapgrp
                                     : index === 2

@@ -4,10 +4,25 @@
     background-color: #101219;
     color: white;
 padding-top: 70px;
-height: 73vw;
-overflow-x: hidden;
-overflow-y: hidden;
+width: 100%;
+height: 100%;
+
+max-width: 100%;
+
+
 }
+
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; /* mobile-safe padding */
+  box-sizing: border-box;
+  width: 100%;
+
+}
+
+
 
 .firsthandp{
   display: flex;
@@ -25,7 +40,7 @@ overflow-y: hidden;
 
 .firsthandp h1::after{
 content: "";
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     width: 100px;
@@ -33,8 +48,7 @@ content: "";
     position: relative;
     border-radius: 5px;
      background: linear-gradient(to bottom right, rgba(0, 220, 255, 0.8), rgba(124, 0, 128, 0.9));
-   left: 90px;
-top: 7px;
+   margin: 7px auto 0;
 }
 
 .firsthandp p{
@@ -48,11 +62,11 @@ padding-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+        
 }
 
 .secondhandp{
-    padding-left: 130px;
+    margin-left: 30px;
     padding-top: 70px;
 }
 
@@ -75,19 +89,16 @@ padding-top: 27px;
     gap: 50px; */
 }
 
-.followndready{
-display: flex;
-justify-content: space-evenly;
-}
+
 
 
 
 .boxes1{
 display: flex;
 flex-direction: column;
-padding-left: 130px;
 gap: 20px;
 padding-top: 30px;
+margin-left: 30px;
 }
 
 .boxes1 svg{
@@ -129,22 +140,37 @@ font-size: 16px;
     align-items: center;
     border: 1px solid #ffffff1a;
     border-radius: 12px;
-    width: max-content;
-    width: 520px;
+
+    width: 40%;
     padding: 12px;
     background-color: #0c0d13;
 }
 
 
+
+.followndready{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+ gap: 200px;
+
+
+}
+
+
 .box2{
+    display: flex;
+    flex-direction: column;
 background-color: #0c0d13;
 padding: 34px;
 border-radius: 15px;
 border: 1px solid #ffffff1a;
 position: relative;
 bottom: 300px;
-left: 110px;
+margin-left: 100px;
 padding-bottom: 12px;
+width: 100%;
+max-width:500px ;
 }
 
 
@@ -174,12 +200,14 @@ gap: 15px;
 padding: 10px;
 border-radius: 10px;
 width: 100%;
+ justify-content: center;
 
 }
 
 .btn1 button{
     display: flex;
-   
+   justify-content: center;
+   align-items: center;
 }
 
 .btn2{
@@ -192,10 +220,12 @@ border-radius: 10px;
 width: 100%;
 border: 1px solid #1ac2ff;
     margin-top: 20px;
+ justify-content: center;
 
 }
 
 .btn1 h2{
+
      font-size: 14px;
 font-family: system-ui;
 font-weight: 500;
@@ -235,13 +265,13 @@ font-weight: 500;
 display: flex;
 flex-direction: column;
 position: relative;
-right: 107px;
+right: 49px;
 top: 70px;
 }
 
 
 .follow h1{
-    font-size: 18px;
+    font-size: 20px;
     font-family: system-ui;
     font-weight: 500;
     
@@ -287,9 +317,479 @@ color: #1ac2ff;
 
 .contactgen::after{
     content: '';
-    height: 2px;
+    height: 1px;
     width: 100%;
     background-color: #a2aebe;
     position: absolute;
-    margin-top: 920px;
+    margin-top:1032px;
+}
+
+    /* RESPONSIVNESS */
+
+  
+@media (min-width: 0) and (max-width: 767px){
+    .contactgen {
+        padding-bottom: 50px;
+    }
+    .firsthandp h1 {
+        font-size: 36px;
+    }
+    .firsthandp h1::after {
+        margin: 7px auto 0;
+    }
+    .firsthandp p {
+        font-size: 16px;
+    }
+
+
+     .span {
+        display: inline;
+    }
+    
+    .secondhandp {
+        padding-top: 50px;
+        text-align: center;
+        margin-left: 0;
+    }
+    .secondhandp p {
+        font-size: 16px;
+    }
+    .boxgen {
+        display: flex;
+        flex-direction: column; /* Stacks the two main sections */
+        gap: 30px;
+    }
+    .boxes1 {
+        width: 100%; /* Makes contact boxes full width */
+        margin-left: 0;
+    }
+    .no1, .no2, .no3 {
+        width: 100%; /* Makes each contact item full width */
+        box-sizing: border-box;
+    }
+    .followndready {
+        display: flex;
+        flex-direction: column; /* Stacks 'Follow' and 'Ready' sections */
+        width: 100%;
+        gap: 30px;
+    }
+    .follow {
+        align-items: center; /* Centers the 'Follow Me' content */
+        position: static; /* Removes fixed positioning */
+        top: auto;
+        right: auto;
+    }
+    .box2 {
+        position: static; /* Removes fixed positioning */
+        bottom: auto;
+        margin-top: 0;
+        margin-left: 0;
+        max-width: 100%;
+    }
+    .box2 h1, .box2 p, .box2 h3 {
+        text-align: center;
+    }
+    .btn1, .btn2 {
+        justify-content: center;
+    }
+    .contactgen::after {
+    display: none;
+    }
+}
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+     .firsthandp {
+        text-align: left;
+    }
+    .firsthandp h1 {
+        font-size: 42px;
+    }
+    .firsthandp p {
+        font-size: 18px;
+        padding-top: 20px;
+    }
+    .firsthandp h1::after {
+       
+    }
+    .secondhandp {
+        padding-top: 50px;
+        margin-left: 0;
+    }
+    .secondhandp p {
+        font-size: 18px;
+    }
+    .boxgen {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 30px;
+        padding-top: 50px;
+    }
+    .boxes1 {
+        flex-grow: 1; /* Allows the box to grow to fill space */
+        margin-left: 0;
+    }
+    .no1, .no2, .no3 {
+        width: 100%;
+    }
+    .followndready {
+        flex-grow: 1; /* Allows the box to grow to fill space */
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .follow {
+        position: static;
+        margin-bottom: 20px;
+        right: auto;
+        top: auto;
+    }    
+    .box2 {
+        position: static;
+        padding: 30px;
+        margin-top: 0;
+        margin-left: 0;
+        max-width: 100%;
+    }
+    .contactgen::after {
+        display: block;
+        position: relative;
+        margin-top: 50px;
+    }
+}
+
+
+
+
+
+@media (min-width: 1025px) {
+    .contactgen{
+    display: flex;  
+    flex-direction: column;
+    background-color: #101219;
+    color: white;
+padding-top: 70px;
+width: 100%;
+height: 100%;
+
+max-width: 100%;
+
+
+}
+
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; /* mobile-safe padding */
+  box-sizing: border-box;
+  width: 100%;
+
+}
+
+
+
+.firsthandp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.firsthandp h1{
+    font-size: 48px;
+    font-family: system-ui;
+    font-weight: 700;
+}
+
+.firsthandp h1::after{
+content: "";
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 5px;
+    position: relative;
+    border-radius: 5px;
+     background: linear-gradient(to bottom right, rgba(0, 220, 255, 0.8), rgba(124, 0, 128, 0.9));
+   margin: 7px auto 0;
+}
+
+.firsthandp p{
+    font-size: 18px;
+    font-family: system-ui;
+color: #a2aebe;
+padding-top: 40px;
+}
+
+.span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+}
+
+.secondhandp{
+    margin-left: 30px;
+    padding-top: 70px;
+}
+
+.secondhandp h1{
+    font-size: 24px;
+    font-family: system-ui;
+font-weight: 500;
+}
+
+.secondhandp p{
+    font-size: 18px;
+    font-family: system-ui;
+color: #a2aebe;
+padding-top: 27px;
+
+}
+
+.boxgen{
+    /* display: flex;
+    gap: 50px; */
+}
+
+
+
+
+
+.boxes1{
+display: flex;
+flex-direction: column;
+gap: 20px;
+padding-top: 30px;
+margin-left: 30px;
+}
+
+.boxes1 svg{
+width: 24px;
+height: 24px;
+color: #1ac2ff;
+
+}
+
+.boxes1 h1{
+font-size: 16px;
+font-weight: 500;
+    font-family: system-ui;
+
+
+}
+
+.boxes1 p{
+    font-size: 16px;
+    color: #a2aebe;
+    font-family: system-ui;
+
+}
+
+.boxes1 a{
+font-size: 16px;
+    color: #a2aebe;
+    font-family: system-ui;
+
+}
+
+.boxes1 a:hover{
+    color: #1ac2ff;
+}
+
+.no1, .no2, .no3{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    border: 1px solid #ffffff1a;
+    border-radius: 12px;
+
+    width: 40%;
+    padding: 12px;
+    background-color: #0c0d13;
+}
+
+
+
+.followndready{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+ gap: 200px;
+
+
+}
+
+
+.box2{
+    display: flex;
+    flex-direction: column;
+background-color: #0c0d13;
+padding: 34px;
+border-radius: 15px;
+border: 1px solid #ffffff1a;
+position: relative;
+bottom: 290px;
+margin-left: 100px;
+padding-bottom: 12px;
+width: 100%;
+max-width:500px ;
+}
+
+
+.box2 h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+font-size: 24px;
+font-family: system-ui;
+font-weight: 500;
+}
+
+.box2 p{
+    font-size: 16px;
+font-family: system-ui;
+color: #a2aebe;
+padding-top: 20px;
+}
+
+
+.btn1 {
+    display: flex;
+    align-items: center;
+background-color: #333bd1;
+gap: 15px;
+    margin-top: 20px;
+padding: 10px;
+border-radius: 10px;
+width: 100%;
+ justify-content: center;
+
+}
+
+.btn1 button{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.btn2{
+    display: flex;
+    align-items: center;
+    background-color: #0c0d13;
+gap: 15px;
+padding: 10px;
+border-radius: 10px;
+width: 100%;
+border: 1px solid #1ac2ff;
+    margin-top: 20px;
+ justify-content: center;
+
+}
+
+.btn1 h2{
+
+     font-size: 14px;
+font-family: system-ui;
+font-weight: 500;
+}
+
+.btn2 h2{
+     font-size: 14px;
+font-family: system-ui;
+    color: #1ac2ff;
+font-weight: 500;
+
+}
+
+.btn2 svg{
+    color: #1ac2ff;
+}
+
+.btn1:hover{
+    background-color: rgb(26, 26, 153);
+}
+
+.btn2:hover{
+    background-color: #1ac2ff;
+    color: black;
+}
+
+.box2 h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #a2aebe;
+    padding-top: 30px;
+}
+
+.follow{
+display: flex;
+flex-direction: column;
+position: relative;
+right: 49px;
+left: 0;
+top: 70px;
+}
+
+
+.follow h1{
+    font-size: 20px;
+    font-family: system-ui;
+    font-weight: 500;
+    
+}
+
+.socialimg{
+    display: flex;
+    color: white;
+    gap: 10px;
+     position: relative;
+     top: 15px;
+
+
+}
+
+.social1{
+    display: flex;
+     justify-content: center;
+  align-items: center;
+    font-size: 25px;
+width: 40px;
+height: 40px;
+border: 1px solid #ffffff1a;
+background-color: #0c0d13;
+border-radius: 8px;
+}
+
+.social2{
+    display: flex;
+     justify-content: center;
+  align-items: center;
+    font-size: 25px;
+    width: 40px;
+height: 40px;
+border: 1px solid #ffffff1a;
+background-color: #0c0d13;
+border-radius: 8px;
+}
+
+.social1:hover svg, .social2:hover svg{
+color: #1ac2ff;
+}
+
+.contactgen::after{
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: #a2aebe;
+    position: absolute;
+    margin-top:1032px;
+}
 }
